@@ -26,7 +26,12 @@ describe ('Javabuzz', function(){
     expect(javabuzz.isDivisibleByFifteen(15)).toEqual(true);
   });
 
-  it('knows that a number is not divisible by fifteen', function(){
+  it('knows that a number is not divisible by fifteen', function() {
     expect(javabuzz.isDivisibleByFifteen(1)).toEqual(false);
   });
+
+  it('says "Java" when given 3', function() {
+    expect(javabuzz.say(3)).toEqual("Java");
+  });
+
 });

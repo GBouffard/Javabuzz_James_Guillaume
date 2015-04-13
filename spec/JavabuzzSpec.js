@@ -34,8 +34,12 @@ describe ('Javabuzz', function(){
     expect(javabuzz.say(3)).toEqual("Java");
   });
 
-   it('says "Buzz" when given 5', function() {
+  it('says "Buzz" when given 5', function() {
     expect(javabuzz.say(5)).toEqual("Buzz");
-  }); 
+  });
+
+  it('says "JavaBuzz" when given 15', function() {
+    expect(javabuzz.say(15)).toEqual("JavaBuzz")
+  });
 
 });

@@ -39,7 +39,10 @@ describe ('Javabuzz', function(){
   });
 
   it('says "JavaBuzz" when given 15', function() {
-    expect(javabuzz.say(15)).toEqual("JavaBuzz")
+    expect(javabuzz.say(15)).toEqual("JavaBuzz");
   });
 
+  it('says the number when not divisible by 3 or 5',function(){
+    expect(javabuzz.say(1)).toEqual(1);
+  });
 });
